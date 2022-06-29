@@ -3,7 +3,7 @@ const axios = require("axios");
 const TC_PDF = 'https://github.com/Vaporjawn/sensible-node/raw/main/58265-title_commitment-3.pdf';
 const Purchase_Contract_PDF = 'https://github.com/Vaporjawn/sensible-node/raw/main/58265_purchase_contract.pdf';
 const Sample_Reports_PDF = 'https://github.com/Vaporjawn/sensible-node/raw/main/auto_insurance_anyco.pdf';
-const State_Docs_PDF = '';
+const State_Docs_PDF = 'https://github.com/Vaporjawn/sensible-node/raw/main/59779_draft_loan_documents_2.pdf';
 const API_KEY = '20bae306043d2978ff0d9762bc828221750774fc6f684e3d5b66c413f267d9ae088e5990cbf364d81e5b22486dcb9d0d9365aa95580247b9f8e5d9adf0ec8fed';
 
 const main = async () => {
