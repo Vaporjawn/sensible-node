@@ -7,18 +7,19 @@ const main = async () => {
   const document = await axios(PDF_URL, {
     responseType: 'arraybuffer'
   })
-    .then(response => {
-      return Buffer.from(response.data, 'base64');
-    });
+  .then(response => {
+    return Buffer.from(response.data, 'base64');
+  });
 
-  const response = await axios({
+  const exampleResponse = await axios({
     method: "post",
     url: 'https://api.sensible.so/v0/extract/senseml_basics',
+    // url: 'https://api.sensible.so/v0/extract/title_commitment?environment=development',
     data: document,
     headers: { "Content-Type": `application/pdf`, "Authorization": 'Bearer ' + API_KEY}
   });
 
-  console.log('This is our response: \n', 'Status Code:' , response.status, '\n\n', response.data);
+  console.log('This is our example response: \n', 'Status Code:' , exampleResponse.status, '\n\n', exampleResponse.data);
 }
 
 main();
